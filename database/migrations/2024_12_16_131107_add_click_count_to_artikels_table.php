@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('artikels', function (Blueprint $table) {
+        Schema::table('Artikels', function (Blueprint $table) {
             $table->integer('click_count')->default(0);
         });
     }
@@ -19,7 +19,7 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::table('artikels', function (Blueprint $table) {
+        Schema::table('Artikels', function (Blueprint $table) {
             $table->dropColumn('click_count');
         });
     }
